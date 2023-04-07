@@ -12,5 +12,9 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 12,
+    fontFamily: "Inter_900Black",
+    textAlign: "center",
+    fontSize: 64,
+    color: "#fff",
   },
 });

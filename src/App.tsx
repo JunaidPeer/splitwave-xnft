@@ -4,10 +4,13 @@ import { ActivityIndicator, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 import { useFonts, Inter_900Black } from "@expo-google-fonts/dev";
 
 import { ExamplesScreens } from "./screens/ExamplesScreen";
+
 import { HomeScreen } from "./screens/HomeScreen";
+
 import { TokenListNavigator } from "./screens/TokenNavigator";
 
 const Tab = createBottomTabNavigator();
@@ -15,16 +18,16 @@ const Tab = createBottomTabNavigator();
 function TabNavigator() {
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Hme"
       screenOptions={{
         tabBarActiveTintColor: "#e91e63",
       }}
     >
       <Tab.Screen
-        name="Home"
+        name="ome"
         component={HomeScreen}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "ome",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
